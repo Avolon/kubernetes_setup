@@ -128,7 +128,7 @@ resource "yandex_compute_instance_group" "k8s-masters" {
     }
 
     metadata = {
-      ssh-keys = "ubuntu:${file("/home/ubuntu/.ssh/roman-skillfactory.pub")}"
+      ssh-keys = "ubuntu:${file("/home/ubuntu/.ssh/avolon-skillfactory.pub")}"
     }
     
     network_settings {
