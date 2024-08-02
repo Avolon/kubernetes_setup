@@ -203,7 +203,7 @@ resource "yandex_compute_instance_group" "k8s-workers" {
     }
 
     metadata = {
-      ssh-keys = "ubuntu:${file("/home/ubuntu/.ssh/roman-skillfactory.pub")}"
+      ssh-keys = "ubuntu:${file("/home/ubuntu/.ssh/avolon-skillfactory.pub")}"
     }
     network_settings {
       type = "STANDARD"
