@@ -14,7 +14,8 @@ terraform {
 # Настраиваем the Yandex.Cloud provider
 # Данные для подключения к провайдеру
 provider "yandex" {
-  token     = var.yandex_cloud_token
+service_account_key_file = file("~/ansible.json")  
+#token     = var.yandex_cloud_token
   cloud_id  = var.yandex_cloud_id
   folder_id = var.yandex_folder_id
 }
@@ -128,7 +129,7 @@ resource "yandex_compute_instance_group" "k8s-masters" {
     }
 
     metadata = {
-      ssh-keys = "ubuntu:${file("/home/ubuntu/.ssh/roman-skillfactory.pub")}"
+      ssh-keys = "ubuntu:${file("/home/ubuntu/.ssh/avolon-skillfactory.pub")}"
     }
     
     network_settings {
