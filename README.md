@@ -34,4 +34,4 @@ $ /opt/kubernetes_setup/cluster_destroy.sh
 
 Результаты разворачивания инфрастурктуры и кластера:
 
-![Итого](images/setup.png)
+![Итого](images/setup.PNG)
